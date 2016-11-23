@@ -73,6 +73,17 @@ const App = React.createClass({
             )}
           </ul>
         </div>
+        <div>
+          <h3>Team</h3>
+          <ul>
+            {this.state.members.map(m =>
+              <li key ={m.id}>
+                {m.name}
+                <button>Remove</button>
+            </li>
+            )}
+          </ul>
+        </div>
       </div>
     )
   }
